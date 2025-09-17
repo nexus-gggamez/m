@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXUS System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/system.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <aside class="nexus-sidebar" tabindex="0">
+    <nav>
+      <ul>
+        <li><a href="home.html"><span class="icon">🏠</span></a></li>
+        <li><a href="games.html"><span class="icon">🎮</span></a></li>
+        <li><a href="music.html"><span class="icon">🎵</span></a></li>
+        <li><a href="settings.html"><span class="icon">⚙️</span></a></li>
+        <li><a href="system.html"><span class="icon">💻</span></a></li>
+      </ul>
+    </nav>
+  </aside>
+  <header class="nexus-header">
+    <div class="nexus-title">NEXUS</div>
+    <div class="nexus-sub">SYSTEM INFO</div>
+  </header>
+  <main class="nexus-main">
+    <section class="system-cards">
+      <div class="system-card">
+        <span class="sys-label">Browser</span>
+        <span class="sys-value" id="browserValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Device</span>
+        <span class="sys-value" id="deviceValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">OS</span>
+        <span class="sys-value" id="osValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Screen</span>
+        <span class="sys-value" id="screenValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Time</span>
+        <span class="sys-value" id="timeValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Battery</span>
+        <span class="sys-value" id="batteryValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Network</span>
+        <span class="sys-value" id="networkValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">IP Address</span>
+        <span class="sys-value" id="ipValue">...</span>
+      </div>
+      <div class="system-card">
+        <span class="sys-label">Location</span>
+        <span class="sys-value" id="locationValue">...</span>
+        <span class="sys-extra" id="addressValue">...</span>
+        <span class="sys-extra" id="mapsLink"></span>
+      </div>
+    </section>
+  </main>
+  <footer class="nexus-footer">
+    <span>&copy; 2025 NEXUS. All rights reserved.</span>
+  </footer>
+  <script src="../js/system.js"></script>
+  <script>
+    document.body.style.opacity = "0";
+    setTimeout(() => { document.body.style.transition = "opacity 0.7s"; document.body.style.opacity = "1"; }, 30);
+  </script>
+</body>
+</html>

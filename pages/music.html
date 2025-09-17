@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXUS Music</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <aside class="nexus-sidebar" tabindex="0">
+    <nav>
+      <ul>
+        <li><a href="home.html"><span class="icon">🏠</span></a></li>
+        <li><a href="games.html"><span class="icon">🎮</span></a></li>
+        <li><a href="music.html"><span class="icon">🎵</span></a></li>
+        <li><a href="settings.html"><span class="icon">⚙️</span></a></li>
+        <li><a href="system.html"><span class="icon">💻</span></a></li>
+      </ul>
+    </nav>
+  </aside>
+  <header class="nexus-header">
+    <div class="nexus-title">NEXUS</div>
+    <div class="nexus-sub">MUSIC PORTAL</div>
+  </header>
+  <main class="nexus-main">
+    <section class="music-content">
+      <form class="music-form" autocomplete="off">
+        <input
+          type="text"
+          id="music_query"
+          class="music-input"
+          placeholder="SEARCH MUSIC"
+          maxlength="32"
+          spellcheck="false"
+          autocomplete="off"
+        >
+        <button type="submit" class="music-btn">SEARCH</button>
+      </form>
+      <div id="music-tip" class="music-tip">
+        Type a song/artist and hit Enter.<br>
+        YouTube will open in a new tab with your search!
+      </div>
+    </section>
+  </main>
+  <footer class="nexus-footer">
+    <span>&copy; 2025 NEXUS. All rights reserved.</span>
+  </footer>
+  <script src="../js/music.js"></script>
+  <script>
+    document.body.style.opacity = "0";
+    setTimeout(() => { document.body.style.transition = "opacity 0.7s"; document.body.style.opacity = "1"; }, 30);
+  </script>
+</body>
+</html>

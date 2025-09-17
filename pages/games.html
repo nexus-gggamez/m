@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXUS Games</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/games.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <aside class="nexus-sidebar" tabindex="0">
+    <nav>
+      <ul>
+        <li><a href="home.html"><span class="icon">🏠</span></a></li>
+        <li><a href="games.html"><span class="icon">🎮</span></a></li>
+        <li><a href="music.html"><span class="icon">🎵</span></a></li>
+        <li><a href="settings.html"><span class="icon">⚙️</span></a></li>
+        <li><a href="system.html"><span class="icon">💻</span></a></li>
+      </ul>
+    </nav>
+  </aside>
+  <header class="nexus-header">
+    <div class="nexus-title">NEXUS</div>
+    <div class="nexus-sub">GAMES LIBRARY</div>
+  </header>
+  <main class="nexus-main">
+    <section class="games-cards">
+      <button class="game-card" data-url="games/2048/index.html"><span class="card-label">2048</span></button>
+      <button class="game-card" data-url="games/among-us/index.html"><span class="card-label">AMONG US</span></button>
+      <button class="game-card" data-url="games/chrome-dino/index.html"><span class="card-label">CHROME DINO</span></button>
+      <button class="game-card" data-url="games/geometrydash/index.html"><span class="card-label">GEOMETRY DASH</span></button>
+      <button class="game-card" data-url="games/cookie-clicker/index.html"><span class="card-label">COOKIE CLICKER</span></button>
+      <!-- Add more games as needed -->
+    </section>
+  </main>
+  <footer class="nexus-footer">
+    <span>&copy; 2025 NEXUS. All rights reserved.</span>
+  </footer>
+  <script src="../js/games.js"></script>
+  <script>
+    document.body.style.opacity = "0";
+    setTimeout(() => { document.body.style.transition = "opacity 0.7s"; document.body.style.opacity = "1"; }, 30);
+  </script>
+</body>
+</html>

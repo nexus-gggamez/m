@@ -1,0 +1,44 @@
+.games-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    margin-top: 2vw;
+    width: 100%;
+    max-width: 900px;
+  }
+  .game-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11,14,24,0.97);
+    border: 2px solid #ff0059;
+    width: 210px;
+    height: 70px;
+    margin: 0.7vw;
+    transition: box-shadow 0.2s, border-color 0.2s, color 0.2s, background 0.2s;
+    color: #fff;
+    box-shadow: 0 0 0px #ff0059;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1.18em;
+    letter-spacing: 0.14em;
+    overflow: hidden;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  .game-card:hover, .game-card:focus {
+    border-color: #08e2ff;
+    color: #08e2ff;
+    background: #15151f;
+    box-shadow: 0 0 24px #08e2ff, 0 0 12px #ff0059;
+  }
+  .card-label {
+    z-index: 2;
+    font-size: 1.18em;
+    font-weight: 700;
+  }
+  @media (max-width: 600px) {
+    .games-cards { gap: 12px; }
+    .game-card { width: 96vw; min-width: 140px; height: 44px; font-size: 1em;}
+  }

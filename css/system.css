@@ -1,0 +1,64 @@
+.system-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    margin-top: 2vw;
+    max-width: 980px;
+  }
+  .system-card {
+    background: #111;
+    border: 2px solid #ff0059;
+    color: #fff;
+    width: 260px;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7vw;
+    box-shadow: 0 0 0px #ff0059;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1.11em;
+    letter-spacing: 0.11em;
+    transition: box-shadow 0.2s, border-color 0.2s, color 0.2s, background 0.2s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+  }
+  .system-card:hover, .system-card:focus {
+    border-color: #08e2ff;
+    color: #08e2ff;
+    background: #15151f;
+    box-shadow: 0 0 20px #08e2ff, 0 0 10px #ff0059;
+  }
+  .sys-label {
+    color: #08e2ff;
+    font-size: 1.09em;
+    margin-bottom: 10px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    text-shadow: 0 0 8px #08e2ff;
+  }
+  .sys-value {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    word-break: break-all;
+  }
+  .sys-extra {
+    font-size: 0.99em;
+    color: #08e2ff;
+    margin-top: 6px;
+    text-align: center;
+    word-break: break-all;
+  }
+  #mapsLink a {
+    color: #ff0059;
+    text-decoration: underline;
+    font-size: 0.98em;
+  }
+  @media (max-width: 600px) {
+    .system-cards { gap: 12px; }
+    .system-card { width: 97vw; min-width: 140px; font-size: 1em;}
+  }

@@ -1,0 +1,15 @@
+.nexus-footer {
+    width: 100vw;
+    background: #111;
+    color: #08e2ff;
+    text-align: center;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1em;
+    padding: 16px 0 12px 0;
+    position: fixed;
+    left: 0; bottom: 0;
+    z-index: 200;
+    letter-spacing: 0.09em;
+    border-top: 2px solid #ff0059;
+    box-shadow: 0 -2px 18px #ff0059b0;
+  }

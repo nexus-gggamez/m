@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #000;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .grid-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, rgba(0,255,255,0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,255,255,0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .nexus-header {
+    width: 100vw;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .nexus-title {
+    font-size: 6vw;
+    color: #fff;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.6vw;
+    text-shadow: 0 0 48px #ff0059, 0 0 8px #fff;
+    filter: blur(0.3px);
+    animation: neon-flicker 2.5s infinite alternate;
+  }
+  @keyframes neon-flicker {
+    0%,100% { text-shadow: 0 0 48px #ff0059, 0 0 12px #fff;}
+    50% { text-shadow: 0 0 40px #ff0059, 0 0 4px #fff;}
+  }
+  .nexus-sub {
+    color: #08e2ff;
+    letter-spacing: 0.22em;
+    font-size: 1.1em;
+    margin-bottom: 0.6vw;
+    text-align: center;
+    text-shadow: 0 0 8px #08e2ff;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  }
+  .nexus-main {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    position: relative;
+  }
+  @media (max-width: 600px) {
+    .nexus-title { font-size: 3em; }
+    .nexus-header { padding-top: 16px; padding-bottom: 8px;}
+    .nexus-main { margin-top: 12px; }
+  }

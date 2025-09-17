@@ -1,0 +1,73 @@
+.music-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    max-width: 540px;
+  }
+  .music-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    max-width: 540px;
+    justify-content: center;
+  }
+  .music-input {
+    background: #111;
+    color: #b7c7d7;
+    border: 2px solid #ff0059;
+    border-radius: 0;
+    font-size: 1.17em;
+    width: 70%;
+    height: 54px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.22s;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  }
+  .music-input:focus {
+    border-color: #08e2ff;
+    background: #14171a;
+    color: #fff;
+  }
+  .music-btn {
+    width: 30%;
+    height: 54px;
+    background: #e53131;
+    color: #fff;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1.15em;
+    letter-spacing: 0.18em;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background 0.18s;
+    font-weight: 600;
+  }
+  .music-btn:hover, .music-btn:focus {
+    background: #ff0059;
+  }
+  .music-tip {
+    margin-top: 2vw;
+    color: #08e2ff;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 0.09em;
+    background: rgba(8,26,33,0.87);
+    border-radius: 9px;
+    padding: 1vw 2vw;
+    box-shadow: 0 0 14px #08e2ff33;
+  }
+  @media (max-width: 600px) {
+    .music-content { max-width: 98vw; }
+    .music-form { max-width: 98vw; gap: 8px;}
+    .music-btn, .music-input { max-width: 98vw;}
+    .music-tip { font-size: 0.98em; padding: 2vw;}
+  }

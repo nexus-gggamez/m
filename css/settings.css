@@ -1,0 +1,76 @@
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    max-width: 420px;
+  }
+  .setting-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+  }
+  .setting-label {
+    color: #fff;
+    font-size: 1.18em;
+    letter-spacing: 0.1em;
+    margin-right: 1vw;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  }
+  .setting-select {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1.13em;
+    background: #111;
+    color: #08e2ff;
+    border: 2px solid #ff0059;
+    letter-spacing: 0.13em;
+    padding: 0.5em 1em;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .setting-select:focus {
+    border-color: #08e2ff;
+  }
+  .theme-preview {
+    margin-left: 1vw;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #08e2ff;
+    display: inline-block;
+    vertical-align: middle;
+    background: #111;
+    box-shadow: 0 0 12px #08e2ff99;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  .setting-btn {
+    width: 100%;
+    background: #e53131;
+    color: #fff;
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 1.15em;
+    letter-spacing: 0.18em;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background 0.18s;
+    font-weight: 600;
+    padding: 1em 0;
+  }
+  .setting-btn:hover, .setting-btn:focus {
+    background: #ff0059;
+  }
+  input[type="checkbox"] {
+    accent-color: #08e2ff;
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 1em;
+  }
+  @media (max-width: 600px) {
+    .settings-content { max-width: 98vw; }
+  }

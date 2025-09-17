@@ -1,8 +1,8 @@
 // Demo account system
 const USERS = [
   { username: 'admin', password: 'abbas007' },
-  { username: 'demo', password: 'demo' },
-  // Add more users here
+  { username: 'giacomo', password: 'makeshiftknife' },
+  { username: 'eric', password: 'joesucks123'
 ];
 
 document.querySelector('.login-form').addEventListener('submit', function(e) {
@@ -24,4 +24,5 @@ document.querySelector('.login-form').addEventListener('submit', function(e) {
 // If already logged in, auto-redirect
 if (localStorage.getItem('nexusUser')) {
   window.location.href = "pages/home.html";
+
 }
